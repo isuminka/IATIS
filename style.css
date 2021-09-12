@@ -1,0 +1,538 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    background-color: #CDEAE8;
+    display: flex;
+    justify-content: center;
+}
+
+video {
+    position: relative;
+    margin-top: -300px;
+}
+
+.header-content {
+    position: absolute;
+    top: 0;
+    width: 100%; 
+}
+
+#menu-toggle {
+    opacity: 0;
+}
+.menu-btn {
+    display: none;
+}
+.menu-btn > span,
+.menu-btn > span::before,
+.menu-btn > span::after {
+  display: none;
+}
+.menu-btn > span::before {
+  content: '';
+  color: #CDEAE8;
+  top: -8px;
+}
+.menu-btn > span::after {
+  content: '';
+  color: #CDEAE8;
+  top: 8px;
+}
+
+.menu-box {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: flex-end;
+    margin-right: 30px;
+}
+
+.menu-item {
+    background-color: #D4DBF3;    
+    padding: 10px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 30px 20px;
+    color: black;
+}
+
+
+#menu-toggle:checked ~ .menu-btn > span {
+    transform: rotate(45deg);
+}
+#menu-toggle:checked ~ .menu-btn > span::before {
+    top: 0;
+    transform: rotate(0);
+}
+#menu-toggle:checked ~ .menu-btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+#menu-toggle:checked ~ .menu-box {
+    visibility: visible;
+    left: 0;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 50px;
+}
+
+#t1 {
+    background-color: #D4DBF3;
+    padding: 20px 50px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#t2 {
+    background-color: #D4DBF3;
+    padding: 10px 30px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#t1 p {
+    font-size: 56px;
+}
+
+#t2 p {
+    font-size: 30px;
+}
+
+main {
+    background-color: #CDEAE8;
+    width: 100%;
+}
+
+.card-title {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-title div {
+    background-color: #3E788F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    padding: 35px 100px;
+}
+
+.card-title p {
+    color: #CDEAE8;
+    font-size: 30px;
+}
+
+.fishes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.fish-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3E788F;
+    padding: 20px 30px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+.fish-name p {
+    color: #CDEAE8;
+    font-size: 30px;
+}
+
+.card {
+    margin: auto;
+}
+
+.about-us {
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
+}
+
+.about-us img:first-child {
+    margin: 50px;
+}
+
+.text-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-block div {
+    background-color: #3E788F;
+    border-radius: 50px;
+}
+
+.text-block div:last-child {
+    margin: 50px;
+}
+
+#about-us-title {
+    color: #CDEAE8;
+    padding: 20px 120px;
+    font-size: 30px;
+}
+
+#about-us-text {
+    color: #CDEAE8;
+    padding: 20px;
+    font-size: 36px;
+}
+
+
+.block3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.how-we-work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.how-we-work div {
+    background-color: #3E788F;
+}
+
+.how-we-work div:first-child {
+    padding: 20px 90px;
+    border-radius: 50px;
+}
+
+.how-we-work div:last-child {
+    padding: 20px;
+    margin-top: 40px;
+    margin-left: 70px;
+    margin-right: 70px;
+    border-radius: 50px;
+}
+
+.how-we-work div:first-child p {
+    color: #CDEAE8;
+    font-size: 30px;
+}
+
+.how-we-work div:last-child p {
+    font-size: 36px;
+    color: #CDEAE8;
+}
+
+
+.images {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.images img {
+    margin: auto;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #3E788F;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+footer div {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer p {
+    color: #CDEAE8;
+    font-size: 24px;
+}
+
+@media (max-width: 1300px) {
+    .card {
+        margin-bottom: 70px;
+    }
+    .about-us {
+        flex-direction: column-reverse;
+    }
+    .card-title div {
+        margin: 50px;
+    }
+    .images {
+        flex-direction: column;
+    }
+    .images img:first-child {
+        margin-bottom: 50px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .menu li {
+        margin: 30px 10px
+    }
+    .menu a {
+        font-size: 14px;
+    }
+    #about-us-title {
+        color: #CDEAE8;
+        padding: 10px 60px;
+        font-size: 20px;
+    }
+    .card img {
+        width: 90%;
+        height: 90%;
+        margin: 15px;
+    }
+    .card-title div {        
+        padding: 20px 50px;
+        margin: 20px;
+    }
+    .card-title p {
+        color: #CDEAE8;
+        font-size: 20px;
+    }
+    .fish-name {
+        margin: 20px;
+        padding: 10px 20px;
+    }
+    .fish-name p {
+        font-size: 20px;
+    }
+    .how-we-work div:first-child {
+        padding: 20px 50px;
+    }
+    .how-we-work div:first-child p {
+        font-size: 24px;
+    }
+    .how-we-work div:last-child {
+        margin: 30px;
+    }
+    footer {
+        flex-direction: column;
+    }
+
+    #t1 {
+        padding: 7px 20px;
+        margin-bottom: 10px;
+    }
+    #t2 {
+        padding: 5px 15px;
+    }
+    #t1 p {
+        font-size: 24px;
+    }
+    #t2 p {
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .images img {
+        width: 90%;
+        height: 90%;
+    }
+    footer p {
+        font-size: 18px;
+    }
+    .how-we-work div:last-child p {
+        font-size: 28px;
+    }
+    .card div p {
+        font-size: 20px;
+    }
+    #about-us-text {
+        font-size: 28px;
+    }
+    .card-title {
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    .card-title div {
+        padding: 20px;
+    }
+    .card-title p {
+        font-size: 20px;
+    }
+    .images img:first-child {
+        margin-bottom: 50px;
+    }
+    #about-us-text {
+        font-size: 20px;
+    }
+    .how-we-work div:last-child p {
+        font-size: 20px;
+    }
+
+    .menu-btn {
+        display: flex; 
+        align-items: center; 
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 1;
+    }
+    .menu-btn > span,
+    .menu-btn > span::before,
+    .menu-btn > span::after {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      background-color: #e2e2e2;
+    }
+    
+    .menu-box {
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        left: -100%;
+        width: 300px;
+        height: 100%;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        text-align: center;
+        background-color: #ECEFF1;
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    }
+    
+    .menu-item {
+        display: block;
+        padding: 12px 24px;
+        color: #333;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: none;
+      }
+    .menu-item:hover {
+        background-color: #CFD8DC;
+    }
+
+   
+}
+
+@media (min-width: 450px) and (max-width: 650px) {
+    #t1 {
+        padding: 10px 30px;
+        margin-bottom: 20px;
+    }
+    #t2 {
+        padding: 7px 20px;
+    }
+    #t1 p {
+        font-size: 36px;
+    }
+    #t2 p {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 1500px) {
+    video {
+        margin-top: -240px;
+    }
+    .title {
+        padding-top: 100px;
+    }
+}
+@media (max-width: 1300px) {
+    video {
+        margin-top: -200px;
+    }
+}
+@media (max-width: 1100px) {
+    video {
+        margin-top: -150px;
+    }
+}
+@media (max-width: 900px) {
+    video {
+        margin-top: -100px;
+    }
+    .title {
+        padding-top: 70px;
+    }
+}
+@media (max-width: 800px) {
+    video {
+        margin-top: -70px;
+    }
+}
+@media (max-width: 700px) {
+    video {
+        margin-top: -40px;
+    }
+}
+@media (max-width: 600px) {
+    video {
+        margin-top: -20px;
+    }
+}
+@media (max-width: 500px) {
+    video {
+        margin-top: -20px;
+    }
+}
+@media (max-width: 400px) {
+    video {
+        margin-top: 0px;
+    }
+}
+@media (max-width: 350px) {
+    .title {
+        margin-top: -20px;
+    }
+}
+
+.card img:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.fish-name:hover {
+    transform: rotate(360deg);
+    transition: 1s ease-in-out;
+}
+
+.about-us img:hover {
+    transform: translateY(-10%);
+    transition: 0.5s;
+}
